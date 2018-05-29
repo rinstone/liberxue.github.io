@@ -1,6 +1,6 @@
 # ----------- CONFIGURABLE START -----------
-title:            "LiberXue|FullStack|独立开发者|jekyll blog|GitHub blog"
-description:      "Full Stack独立开发者|欢迎来到 LiberXue「角落」侃侃理想、谈谈人生、敲敲代码。"
+title:            "Rin|记录者|jekyll blog|GitHub blog"
+description:      "Rin-记录者|欢迎来到 Rin「碎片」聊故事、谈人生、作大死。"
 url:              https://rinstone.github.io # 域名
 signoff:          "Rin" # Your name
 facebook_appid:   #liberxue
@@ -8,7 +8,7 @@ google_analytics:
 share:            true 
 # 分页
 paginate: 15
-paginate_path: "liberxuepage:num"
+paginate_path: "page:num"
 gems: [jekyll-paginate]
 links:
   - name:         首页
