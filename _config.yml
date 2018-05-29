@@ -88,3 +88,5 @@ permalink: /:year/:month/:day/:title.html
 
 # Plugins
 plugins: [jekyll-paginate]
+# Hero background patterns
+postPatterns: 'circuitBoard'
