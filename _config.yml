@@ -1,38 +1,90 @@
-# ----------- CONFIGURABLE START -----------
-title:            "Rin|记录者|jekyll blog|GitHub blog"
-description:      "Rin-记录者|欢迎来到 Rin「碎片」聊故事、谈人生、作大死。"
-url:              https://rinstone.github.io # 域名
-signoff:          "Rin" # Your name
-facebook_appid:   #liberxue
-google_analytics: 
-share:            true 
-# 分页
-paginate: 15
-paginate_path: "page:num"
-gems: [jekyll-paginate]
-links:
-  - name:         首页
-    url:          /
-    external:     false
-  - name:         书籍
-    url:          /book
-    external:     false
-  - name:         设计
-    url:          /road
-    external:     false
-  - name:         归档
-    url:          /archives
-    external:     false
-  - name:         标签
-    url:          /tags
-    external:     false
-  - name:         关于
-    url:          /about
-    external:     false
-# ------------ CONFIGURABLE END ------------
+﻿# Site settings 
+title: 'Rin的记录博客'
 
-#permalink:        /:categories/:title.html
+description: '很高兴能在这里与你分享我对写作和生活的思考。'
+
+keyword: 'rin, 独立博客, 设计,写作，数码爱好者，电影迷'
+
+url: 'http://liaokeyu.com' # your host
+
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
+
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
+
+# Footer
+footer:
+  since: 2016
+
+
+# Author 配置博主信息
+
+author: 'Rin'
+
+nickname: ''
+
+bio: '策划运营，热爱生活，简单乐观爱创造'
+
+avatar: '/assets/img/profile.png'
+
+# Search
+search: true
+
+# Night mode
+nightMode: true
+
+# Comments 评论功能
+comments:
+  disqus: false
+  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+
+# MathJax 公式支持 by Ray-Eldath
+mathjax: true
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+
+# SNS settings 配置社交网站
+# 
+url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  weibo: '//weibo.com/l'
+  juejin: '//juejin.im/user/'
+  instagram: '//www.instagram.com/'
+  github: '//github.com/'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+# RSS
+RSS: false
+
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
 permalink: /:year/:month/:day/:title.html
-defaults:
-  - values:
-      layout: "default"
+
+# Plugins
+plugins: [jekyll-paginate]
